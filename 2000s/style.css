@@ -98,7 +98,7 @@ a:hover {
 nav {
     position: fixed;
     top: 10px;
-    right: 10px;
+    left: 10px;
     text-align: left;
     font-size: 20px;
     color: #00FF00;
