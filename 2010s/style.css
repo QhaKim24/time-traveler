@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
-  
+
 .matrix-bg {
   position: fixed;
   width: 100%;
@@ -16,8 +16,7 @@ body {
   pointer-events: none;
   animation: matrixScroll 1.5s linear infinite;
 }
-  
-  
+
 .matrix-overlay {
   position: fixed;
   top: 0;
@@ -32,7 +31,6 @@ body {
   animation: glitchText 3s linear infinite;
 }
 
-  
 .navbar {
   text-align: center;
   background: #001100;
@@ -40,12 +38,12 @@ body {
   z-index: 1;
   position: relative;
 }
-  
+
 .button-container {
   text-align: center;
   margin: 10px 0;
 }
-  
+
 .nav-button {
   background: black;
   color: #00ff00;
@@ -62,7 +60,7 @@ body {
   background: #00ff00;
   color: black;
 }
-  
+
 .side-column {
   position: fixed;
   display: flex;
@@ -71,10 +69,14 @@ body {
   top: 160px;
 }
 
-.side-column.left { left: 10px; }
+.side-column.left {
+  left: 10px;
+}
 
-.side-column.right { right: 10px; }
-  
+.side-column.right {
+  right: 10px;
+}
+
 .side-card {
   background: black;
   border: 2px solid #00ff00;
@@ -83,10 +85,16 @@ body {
   box-shadow: 0 0 8px #00ff00;
 }
 
-.side-card.tall { width: 140px; height: 200px; }
+.side-card.tall {
+  width: 140px;
+  height: 200px;
+}
 
-.side-card.short { width: 140px; height: 100px; }
-  
+.side-card.short {
+  width: 140px;
+  height: 100px;
+}
+
 .sim-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -95,7 +103,7 @@ body {
   padding: 0 20px;
   gap: 20px;
 }
-  
+
 .sim-window {
   background-color: black;
   border: 2px solid #00ff00;
@@ -104,7 +112,7 @@ body {
   box-shadow: 0 0 6px #00ff00;
   font-size: 13px;
 }
-  
+
 .frame-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -113,7 +121,7 @@ body {
   margin: 40px auto 200px; /* 아래 여백을 더 줌 */
   padding: 0 20px;
 }
-  
+
 .win-frame {
   width: 340px;
   height: 240px;
@@ -124,6 +132,12 @@ body {
   box-shadow: 0 0 8px #00ff00;
   overflow: hidden;
   transition: transform 0.4s;
+}
+
+a.win-frame {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .win-frame:hover {
@@ -152,14 +166,14 @@ body {
 .content::-webkit-scrollbar-thumb {
   background: #00ff00;
 }
-  
+
 .terminal {
   position: fixed;
   bottom: 0;
   width: 100%;
   background-color: #001100;
-  padding: 6px 12px;         /* 패딩 줄이기 */
-  font-size: 12px;           /* 폰트 크기 줄이기 */
+  padding: 6px 12px;
+  font-size: 12px;
   color: #00ff00;
   border-top: 2px solid #00ff00;
   z-index: 100;
@@ -168,18 +182,30 @@ body {
 .blinking {
   animation: blink 1s steps(2, start) infinite;
 }
-  
+
 @keyframes blink {
-  to { visibility: hidden; }
+  to {
+    visibility: hidden;
+  }
 }
 
 @keyframes matrixScroll {
-  from { background-position-y: 0; }
-  to { background-position-y: 4px; }
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 4px;
+  }
 }
 
 @keyframes glitchText {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(-10px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
