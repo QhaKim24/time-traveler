@@ -108,7 +108,7 @@ body {
   background-color: black;
   border: 2px solid #00ff00;
   padding: 12px;
-  height: 100px; /* 높이 줄이기 */
+  height: 100px; 
   box-shadow: 0 0 6px #00ff00;
   font-size: 13px;
 }
@@ -118,7 +118,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   max-width: 1200px;
-  margin: 40px auto 200px; /* 아래 여백을 더 줌 */
+  margin: 40px auto 200px;
   padding: 0 20px;
 }
 
