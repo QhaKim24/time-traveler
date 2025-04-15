@@ -61,6 +61,10 @@ body {
   color: black;
 }
 
+.side-container {
+  position: relative;
+}
+
 .side-column {
   position: fixed;
   display: flex;
@@ -207,5 +211,40 @@ a.win-frame {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 1550px) {
+  .side-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .frame-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .win-frame {
+    width: 90%;
+    height: auto;
+    transform: none !important;
+    overflow: visible;
+  }
+
+  .sim-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sim-window {
+    font-size: 12px;
+    height: auto;
+  }
+
+  .terminal {
+    font-size: 11px;
+    padding: 4px 10px;
   }
 }
